@@ -2,7 +2,7 @@
 //   border-bottom: 1px solid #ececec;
 // }
 
-header {
+.page-header {
   padding-top: 16px;
   padding-bottom: 16px;
 }
@@ -152,8 +152,11 @@ header {
 
 .conteiner {
   width: 100%;
+  height: 100%;
   padding-left: 15px;
   padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 // // 0-1199px
@@ -178,8 +181,6 @@ header {
 @media screen and (min-width: 480px) {
   .conteiner {
     width: 480px;
-    margin-right: auto;
-    margin-left: auto;
   }
 }
 
