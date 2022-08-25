@@ -2,3 +2,21 @@
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
+@media screen and (max-width: 767px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 48px;
+  }
+  .conteiner.clients {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 66px;
+  }
+}
