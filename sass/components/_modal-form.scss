@@ -10,6 +10,10 @@
 
   @include font(20px, 700, 23px);
 
+  @media screen and (max-width: 767px) {
+    @include font(20px, 700, 30px);
+  }
+
   letter-spacing: 0.03em;
 
   color: var(--title-text-color);
@@ -157,6 +161,10 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+
+  @media screen and (max-width: 767px) {
+    @include font(12px, 400, 14.06px);
+  }
 
   letter-spacing: 0.03em;
 

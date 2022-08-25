@@ -18,14 +18,13 @@
   border-radius: 4px;
   border: none;
 
-cursor: pointer;
+  cursor: pointer;
 
   &:hover,
   &:focus {
     background-color: var(--secondary-accent-color);
   }
 }
-
 
 .button .list .button {
   margin-bottom: 50px;
@@ -74,4 +73,9 @@ cursor: pointer;
 
 .button-filter {
   margin-bottom: 50px;
+
+  @media screen and (max-width: 480px) {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
 }

@@ -1,5 +1,17 @@
 .subs-form {
   display: flex;
+  @media screen and (max-width: 1199px) {
+    display: block;
+  }
+}
+
+.footer-form {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
 }
 
 .form-title {
@@ -32,6 +44,10 @@
 
   &:focus {
     border-color: var(--secondary-background-color);
+  }
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 20px;
   }
 }
 
@@ -78,6 +94,11 @@
   &:hover,
   &:focus {
     background-color: var(--secondary-accent-color);
+  }
+
+  @media screen and (max-width: 1199px) {
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 

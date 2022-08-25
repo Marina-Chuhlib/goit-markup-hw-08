@@ -1,8 +1,8 @@
 .our-team {
   display: flex;
   flex-wrap: wrap;
-
-  gap: 30px;
+  margin-top: -30px;
+  margin-bottom: -30px;
 
   @media screen and (max-width: 767px) {
     display: block;
@@ -29,12 +29,25 @@
   }
 }
 
+.our-team {
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-basis: calc((100% - 2 * 30px) / 2);
+  }
+}
+
 .section.our-teem {
   background-color: var(--secondary-background-color);
 }
 
 .team-img {
   width: 100%;
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
 }
 
 .team-profession {

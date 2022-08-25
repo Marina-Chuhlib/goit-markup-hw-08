@@ -39,6 +39,8 @@
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../../images/hero.jpg);
+
+    max-width: 1600px;
   }
 }
 
@@ -74,17 +76,15 @@
 }
 
 .conteiner.hero-block {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
   @media screen and (max-width: 767px) {
     padding: 118px 60px;
   }
 }
 
 @media screen and (min-width: 768px) {
+  .hero {
+    padding: 128px 208px 118px 206px;
+  }
 }
 
 @media screen and (min-width: 1200px) {

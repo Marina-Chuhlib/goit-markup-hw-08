@@ -20,39 +20,53 @@
 @media screen and (min-width: 768px) {
   .features {
     flex-wrap: wrap;
+    gap: 30px;
+    margin-top: -30px;
+    margin-bottom: -30px;
   }
 
   .features-list {
-    gap: 30px;
-    width: 354px;
-  }
+    flex-basis: calc((100% - 2 * 30px) / 2);
 
-  .conteiner.advantages {
-    margin: 0;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
 }
 
-// .advantage {
-//   padding-bottom: 0;
-// }
+@media screen and (min-width: 1140px) {
+  .features-list {
+    flex-basis: calc((100% - 3 * 30px) / 3);
+  }
+}
 
-//   &:nth-child(4n) {
-//     margin-right: 0;
-//   }
-// }
+@media screen and (min-width: 1200px) {
+  .advantage {
+    padding-bottom: 0;
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
+}
 
 .features-icons {
   @extend %display-align;
 
   height: 120px;
-  background: #f5f4fa;
-  border-radius: 4px;
-  margin-bottom: 30px;
 
   @media screen and (min-width: 768px) {
     width: 354px;
-    height: 120px;
   }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+    margin-right: 0;
+  }
+
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
 }
 
 .icon-features {
