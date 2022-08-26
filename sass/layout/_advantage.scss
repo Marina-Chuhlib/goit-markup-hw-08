@@ -4,9 +4,6 @@
   }
 }
 
-@media screen and (min-width: 768px) {
-}
-
 .features {
   display: flex;
 
@@ -17,7 +14,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .features {
     flex-wrap: wrap;
     gap: 30px;
@@ -34,7 +31,7 @@
   }
 }
 
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1140px) and (max-width: 1199px) {
   .features-list {
     flex-basis: calc((100% - 3 * 30px) / 3);
   }

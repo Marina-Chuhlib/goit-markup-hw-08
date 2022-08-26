@@ -27,14 +27,12 @@
   &:nth-child(4n) {
     margin-right: 0;
   }
-}
 
-.our-team {
-  &:not(:last-child) {
-    margin-bottom: 30px;
-  }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     flex-basis: calc((100% - 2 * 30px) / 2);
+    // &:not(:last-child) {
+    //   margin-bottom: 30px;
+    // }
   }
 }
 

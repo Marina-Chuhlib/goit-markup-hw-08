@@ -16,8 +16,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body class="page">
-    <!-- Header -->
-    <header>
+    <header class="page-header">
       <div class="conteiner page-nav">
         <nav>
           <a href="./index.html" class="logo">Web <span class="logo__desc">Studio</span> </a>
@@ -31,6 +30,13 @@
             <li class="nav__lists"><a href="#contact" class="nav__link">Контакты</a></li>
           </ul>
         </nav>
+
+        <button type="button" class="mobile-menu-open" data-menu-open>
+          <svg class="mobile-menu-open__icon">
+            <use href="./images/symbol-defs.svg#icon-burger-btn"></use>
+          </svg>
+        </button>
+
         <ul class="contacts list">
           <li class="contacts-list">
             <a href="mailto:info@devstudio.com" class="contacts-link mail-icon">
@@ -49,6 +55,47 @@
             >
           </li>
         </ul>
+      </div>
+
+      <div class="mobile-menu" data-menu>
+        <div class="conteiner mobile-menu__conteiner">
+          <button class="mobile-menu__close-btn" data-menu-close>
+            <svg class="mobile-menu__icon">
+              <use href="./images/symbol-defs.svg#icon-close-modal"></use>
+            </svg>
+          </button>
+          <div class="mobile-menu-nav-list">
+            <ul class="mobile-menu-nav list">
+              <li class="mobile-menu-nav__item">
+                <a href="./index.html" class="mobile-menu-nav__link link">Студия</a>
+              </li>
+              <li class="mobile-menu-nav__item">
+                <a href="./portfolio.html" class="mobile-menu-nav__link link current">Портфолио </a>
+              </li>
+              <li class="mobile-menu-nav__item">
+                <a href="#contact" class="mobile-menu-nav__link link">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mobile-menu-contacts">
+            <ul class="menu-contacts list">
+              <li class="menu-contacts__item">
+                <a href="tel:+380961111111" class="menu-contacts__tel"> +38 096 111 11 11</a>
+              </li>
+              <li class="menu-contacts__item">
+                <a href="mailto:info@devstudio.com" class="menu-contacts__mail">
+                  info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="menu-social-list list">
+              <li class="mobile-social-item"><a class="mobile-social-link">Instagram</a></li>
+              <li class="mobile-social-item"><a class="mobile-social-link">Twitter</a></li>
+              <li class="mobile-social-item"><a class="mobile-social-link">Facebook</a></li>
+              <li class="mobile-social-item"><a class="mobile-social-link">LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <!-- Main -->
@@ -77,13 +124,24 @@
             <li class="img-list">
               <a href="" class="img-portfolio-link link">
                 <div class="product-thumb">
-                  <img
-                    src="./images/img7.jpg"
-                    alt="Ноутбук"
-                    width="370"
-                    height="294"
-                    class="img-content"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/img7.jpg 1x, ./images/img-p-desktop-1@2.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="./images/img-p-tablet-1.jpg 1x, ./images/img-p-tablet-1@2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="./images/img-p-mobile-1.jpg 1x, ./images/img-p-mobile-1@2x.jpg 2x"
+                      media="(min-width: 320px)"
+                    />
+                    <img src="./images/img7.jpg" alt="Ноутбук" class="img-content" />
+                  </picture>
+
                   <p class="subtext">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -96,16 +154,34 @@
                 </div>
               </a>
             </li>
+
             <li class="img-list">
               <a href="" class="img-portfolio-link link">
                 <div class="product-thumb">
-                  <img
-                    src="./images/img1.jpg"
-                    alt="Боскидболисты"
-                    width="370"
-                    height="294"
-                    class="img-content"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/img1.jpg 1x, ./images/img-p-desktop-2@2.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="./images/img-p-tablet-2.jpg 1x, ./images/img-p-tablet-2@2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="./images/img-p-mobile-2.jpg 1x, ./images/img-p-mobile-2@2x.jpg 2x"
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/img-p-mobile-2.jpg"
+                      alt="Баскедболисты"
+                      width="370"
+                      height="294"
+                      class="img-content"
+                    />
+                  </picture>
+
                   <p class="subtext">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -120,45 +196,81 @@
                 </div>
               </a>
             </li>
+
             <li class="img-list">
-              <a href="" class="link"
-                ><img
-                  src="./images/img2.jpg"
-                  alt="Рыба"
-                  width="370"
-                  height="294"
-                  class="img-content"
-                />
+              <a href="" class="link">
+                <picture>
+                  <source
+                    srcset="./images/img2.jpg 1x, ./images/img-p-desktop-3@2.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+
+                  <source
+                    srcset="./images/img-p-tablet-3jpg 1x, ./images/img-p-tablet-3@2x.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
+
+                  <source
+                    srcset="./images/img-p-mobile-3.jpg 1x, ./images/img-p-mobile-3@2x.jpg 2x"
+                    media="(min-width: 320px)"
+                  />
+                  <img src="./images/img2.jpg" alt="Рыба" class="img-content" />
+                </picture>
+
                 <div class="img-diskription">
                   <h2 class="img-title">Ресторан Seafood</h2>
                   <p class="img-desc">Приложение</p>
                 </div>
               </a>
             </li>
+
             <li class="img-list">
-              <a href="" class="link"
-                ><img
-                  src="./images/img3.jpg"
-                  alt="Наушники"
-                  width="370"
-                  height="294"
-                  class="img-content"
-                />
+              <a href="" class="link">
+                <picture>
+                  <source
+                    srcset="./images/img3.jpg 1x, ./images/img-p-desktop-4@2.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+
+                  <source
+                    srcset="./images/img-p-tablet-4jpg 1x, ./images/img-p-tablet-4@2x.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
+
+                  <source
+                    srcset="./images/img-p-mobile-4.jpg 1x, ./images/img-p-mobile-4@2x.jpg 2x"
+                    media="(min-width: 320px)"
+                  />
+                  <img src="./images/img3.jpg" alt="Наушники" class="img-content" />
+                </picture>
+
                 <div class="img-diskription">
                   <h2 class="img-title">Проект <span lang="en">Prime</span></h2>
                   <p class="img-desc">Маркетинг</p>
                 </div>
               </a>
             </li>
+
             <li class="img-list">
-              <a href="" class="link"
-                ><img
-                  src="./images/img9.jpg"
-                  alt="Две коробки"
-                  width="370"
-                  height="294"
-                  class="img-content"
-                />
+              <a href="" class="link">
+                <picture>
+                  <source
+                    srcset="./images/img9.jpg 1x, ./images/img-p-desktop-5@2.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+
+                  <source
+                    srcset="./images/img-p-tablet-5jpg 1x, ./images/img-p-tablet-5@2x.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
+
+                  <source
+                    srcset="./images/img-p-mobile-5.jpg 1x, ./images/img-p-mobile-@2x.jpg 2x"
+                    media="(min-width: 320px)"
+                  />
+                  <img src="./images/img9.jpg" alt="Две коробки" class="img-content" />
+                </picture>
+
                 <div class="img-diskription">
                   <h2 class="img-title">Проект Boxes</h2>
                   <p class="img-desc">Приложение</p>
@@ -166,14 +278,25 @@
               </a>
             </li>
             <li class="img-list">
-              <a href="" class="link"
-                ><img
-                  src="./images/img8.jpg"
-                  alt="Монитор компьютера"
-                  width="370"
-                  height="294"
-                  class="img-content"
-                />
+              <a href="" class="link">
+                <picture>
+                  <source
+                    srcset="./images/img8.jpg 1x, ./images/img-p-desktop-6@2.jpg2x"
+                    media="(min-width: 1200px)"
+                  />
+
+                  <source
+                    srcset="./images/img-p-tablet-6jpg 1x, ./images/img-p-tablet-6@2x.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
+
+                  <source
+                    srcset="./images/img-p-mobile-6.jpg 1x, ./images/img-p-mobile-6@2x.jpg 2x"
+                    media="(min-width: 320px)"
+                  />
+                  <img src="./images/img8.jpg" alt="Монитор компьютера" class="img-content" />
+                </picture>
+
                 <div class="img-diskription">
                   <h2 class="img-title"><span lang="en">Inspiration has no Borders</span></h2>
                   <p class="img-desc">Веб-сайт</p>
@@ -181,14 +304,25 @@
               </a>
             </li>
             <li class="img-list">
-              <a href="" class="link"
-                ><img
-                  src="./images/img4.jpg"
-                  alt="Открытая книга"
-                  width="370"
-                  height="294"
-                  class="img-content"
-                />
+              <a href="" class="link">
+                <picture>
+                  <source
+                    srcset="./images/img4.jpg 1x, ./images/img-p-desktop-7@2.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+
+                  <source
+                    srcset="./images/img-p-tablet-7jpg 1x, ./images/img-p-tablet-7@2x.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
+
+                  <source
+                    srcset="./images/img-p-mobile-7.jpg 1x, ./images/img-p-mobile-7@2x.jpg 2x"
+                    media="(min-width: 320px)"
+                  />
+                  <img src="./images/img4.jpg" alt="Открытая книга" class="img-content" />
+                </picture>
+
                 <div class="img-diskription">
                   <h2 class="img-title">Издание <span lang="en">Limited Edition</span></h2>
                   <p class="img-desc">Дизайн</p>
@@ -196,14 +330,25 @@
               </a>
             </li>
             <li class="img-list">
-              <a href="" class="link"
-                ><img
-                  src="./images/img5.jpg"
-                  alt="Этикетка"
-                  width="370"
-                  height="294"
-                  class="img-content"
-                />
+              <a href="" class="link">
+                <picture>
+                  <source
+                    srcset="./images/img5.jpg 1x, ./images/img-p-desktop-8@2.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+
+                  <source
+                    srcset="./images/img-p-tablet-8jpg 1x, ./images/img-p-tablet-8@2x.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
+
+                  <source
+                    srcset="./images/img-p-mobile-8.jpg 1x, ./images/img-p-mobile-8@2x.jpg 2x"
+                    media="(min-width: 320px)"
+                  />
+                  <img src="./images/img5.jpg" alt="Этикетка" class="img-content" />
+                </picture>
+
                 <div class="img-diskription">
                   <h2 class="img-title">Проект <span lang="en">LAB</span></h2>
                   <p class="img-desc">Маркетинг</p>
@@ -211,14 +356,29 @@
               </a>
             </li>
             <li class="img-list">
-              <a href="" class="link"
-                ><img
-                  src="./images/img6.jpg"
-                  alt="Руки печатают по ноутбуку"
-                  width="370"
-                  height="294"
-                  class="img-content"
-                />
+              <a href="" class="link">
+                <picture>
+                  <source
+                    srcset="./images/img6.jpg 1x, ./images/img-p-desktop-9@2.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+
+                  <source
+                    srcset="./images/img-p-tablet-9jpg 1x, ./images/img-p-tablet-9@2x.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
+
+                  <source
+                    srcset="./images/img-p-mobile-9.jpg 1x, ./images/img-p-mobile-9@2x.jpg 2x"
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    src="./images/img6.jpg"
+                    alt="Руки печатают по ноутбуку"
+                    class="img-content"
+                  />
+                </picture>
+
                 <div class="img-diskription">
                   <h2 class="img-title" lang="en">Growing Business</h2>
                   <p class="img-desc">Приложение</p>
