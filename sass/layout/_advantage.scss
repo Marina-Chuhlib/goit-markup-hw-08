@@ -15,6 +15,9 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .conteiner.advantages {
+    width: 100%;
+  }
   .features {
     flex-wrap: wrap;
     gap: 30px;

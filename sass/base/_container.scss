@@ -1,13 +1,13 @@
 .conteiner {
   padding-left: 15px;
   padding-right: 15px;
-  margin-right: auto;
-  margin-left: auto;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   .conteiner {
     width: 480px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -15,18 +15,14 @@
   .conteiner {
     width: 720px;
   }
-  .conteiner.advantages {
-    width: 100%;
-  }
 
-  .conteiner.employees {
-    width: 100%;
-  }
+  // .conteiner.employees {
+  //   width: 100%;
+}
 
-  .conteiner.clients {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+.conteiner.clients {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {

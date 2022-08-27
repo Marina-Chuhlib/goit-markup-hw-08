@@ -46,6 +46,10 @@
     border-color: var(--secondary-background-color);
   }
 
+  @media screen and (max-width: 480px) {
+    width: 100%;
+  }
+
   @media screen and (max-width: 1199px) {
     margin-bottom: 20px;
   }
