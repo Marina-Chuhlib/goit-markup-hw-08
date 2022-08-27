@@ -88,7 +88,7 @@ button {
     padding-bottom: 48px;
   }
 }
-.conteiner {
+.container {
   padding-left: 15px;
   padding-right: 15px;
   margin-right: auto;
@@ -96,22 +96,22 @@ button {
 }
 
 @media screen and (min-width: 480px) {
-  .conteiner {
+  .container {
     width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
-  .conteiner {
+  .container {
     width: 768px;
   }
 }
-.conteiner.clients {
+.container.clients {
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
-  .conteiner {
+  .container {
     width: 1200px;
   }
 }
@@ -567,7 +567,7 @@ button {
     visibility: visible;
     pointer-events: auto;
   }
-  .mobile-menu__conteiner {
+  .mobile-menu__container {
     position: relative;
     height: 100%;
     padding-top: 48px;
@@ -891,7 +891,7 @@ header {
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-mobile.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mobile.jpg);
     width: 100%;
   }
 }
@@ -951,7 +951,7 @@ header {
 }
 
 @media screen and (max-width: 767px) {
-  .conteiner.hero-block {
+  .container.hero-block {
     padding: 118px 60px;
   }
 }
@@ -992,7 +992,7 @@ header {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .conteiner.advantages {
+  .container.advantages {
     width: 100%;
   }
   .features {

@@ -17,7 +17,7 @@
   </head>
   <body class="page">
     <header class="page-header">
-      <div class="conteiner page-nav">
+      <div class="container page-nav">
         <nav>
           <a href="./index.html" class="logo">Web <span class="logo__desc">Studio</span> </a>
           <ul class="nav list">
@@ -56,48 +56,50 @@
       </div>
 
       <div class="mobile-menu" data-menu>
-        <div class="conteiner mobile-menu__conteiner">
+        <div class="container mobile-menu__container">
           <button class="mobile-menu__close-btn" data-menu-close>
             <svg class="mobile-menu__icon">
               <use href="./images/symbol-defs.svg#icon-close-modal"></use>
             </svg>
           </button>
-        <div class="mobile-menu-nav-list">
-          <ul class="mobile-menu-nav list">
-            <li class="mobile-menu-nav__item">
-              <a href="./index.html" class="mobile-menu-nav__link link current">Студия</a>
-            </li>
-            <li class="mobile-menu-nav__item">
-              <a href="./portfolio.html" class="mobile-menu-nav__link link">Портфолио </a>
-            </li>
-            <li class="mobile-menu-nav__item">
-              <a href="#contact" class="mobile-menu-nav__link link">Контакты</a>
-            </li>
-          </ul></div>
+          <div class="mobile-menu-nav-list">
+            <ul class="mobile-menu-nav list">
+              <li class="mobile-menu-nav__item">
+                <a href="./index.html" class="mobile-menu-nav__link link current">Студия</a>
+              </li>
+              <li class="mobile-menu-nav__item">
+                <a href="./portfolio.html" class="mobile-menu-nav__link link">Портфолио </a>
+              </li>
+              <li class="mobile-menu-nav__item">
+                <a href="#contact" class="mobile-menu-nav__link link">Контакты</a>
+              </li>
+            </ul>
+          </div>
           <div class="mobile-menu-contacts">
-          <ul class="menu-contacts list">
-            <li class="menu-contacts__item">
-              <a href="tel:+380961111111" class="menu-contacts__tel"> +38 096 111 11 11</a>
-            </li>
-            <li class="menu-contacts__item">
-              <a href="mailto:info@devstudio.com" class="menu-contacts__mail">
-                info@devstudio.com</a
-              >
-            </li>
-          </ul>
-          <ul class="menu-social-list list">
-            <li class="mobile-social-item"><a class="mobile-social-link">Instagram</a></li>
-            <li class="mobile-social-item"><a class="mobile-social-link">Twitter</a></li>
-            <li class="mobile-social-item"><a class="mobile-social-link">Facebook</a></li>
-            <li class="mobile-social-item"><a class="mobile-social-link">LinkedIn</a></li>
-          </ul></div>
+            <ul class="menu-contacts list">
+              <li class="menu-contacts__item">
+                <a href="tel:+380961111111" class="menu-contacts__tel"> +38 096 111 11 11</a>
+              </li>
+              <li class="menu-contacts__item">
+                <a href="mailto:info@devstudio.com" class="menu-contacts__mail">
+                  info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="menu-social-list list">
+              <li class="mobile-social-item"><a class="mobile-social-link">Instagram</a></li>
+              <li class="mobile-social-item"><a class="mobile-social-link">Twitter</a></li>
+              <li class="mobile-social-item"><a class="mobile-social-link">Facebook</a></li>
+              <li class="mobile-social-item"><a class="mobile-social-link">LinkedIn</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
     <main>
       <!-- Hero -->
       <section class="hero">
-        <div class="conteiner hero-block">
+        <div class="container hero-block">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
           <button type="button" class="modal-button" data-modal-open>Заказать услугу</button>
         </div>
@@ -105,7 +107,7 @@
 
       <!-- Advantage -->
       <section class="section advantage">
-        <div class="conteiner advantages">
+        <div class="container advantages">
           <h2 class="section-title visually-hidden">Преимущества</h2>
           <ul class="features list">
             <li class="features-list">
@@ -157,7 +159,7 @@
       </section>
       <!-- Work -->
       <section class="section work">
-        <div class="conteiner">
+        <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="preview list">
             <li class="work-list">
@@ -211,27 +213,24 @@
       </section>
       <!-- Our team -->
       <section class="section our-teem">
-        <div class="conteiner employees">
+        <div class="container employees">
           <h2 class="section-title">Наша команда</h2>
           <ul class="our-team list">
             <li class="our-team__list">
               <picture>
                 <source
-                media="(min-width: 1200px)"
+                  media="(min-width: 1200px)"
                   srcset="./images/img.jpg 1x, ./images/img@2x.jpg 2x"
-                  
-                />
-
-                <source 
-                media="(min-width: 768px)"
-                  srcset="./images/img-tablet.jpg 1x, ./images/img-tablet@2x.jpg 2x"
-                 
                 />
 
                 <source
-                media="(min-width: 320px)"
+                  media="(min-width: 768px)"
+                  srcset="./images/img-tablet.jpg 1x, ./images/img-tablet@2x.jpg 2x"
+                />
+
+                <source
+                  media="(min-width: 320px)"
                   srcset="./images/img-mobile.jpg 1x, ./images/img-mobile@2x.jpg 2x"
-                  
                 />
                 <img
                   src="./images/img-mobile.jpg"
@@ -279,21 +278,18 @@
             <li class="our-team__list">
               <picture>
                 <source
-                media="(min-width: 1200px)"
+                  media="(min-width: 1200px)"
                   srcset="./images/img(1).jpg 1x, ./images/img-desktop-1@2x.jpg 2x"
-                  
                 />
 
                 <source
-                media="(min-width: 768px)"
+                  media="(min-width: 768px)"
                   srcset="./images/img-tablet-1.jpg 1x, ./images/img-table-1t@2x.jpg 2x"
-                  
                 />
 
                 <source
-                media="(min-width: 320px)"
+                  media="(min-width: 320px)"
                   srcset="./images/img-mobile-1.jpg 1x, ./images/img-mobile-1@2x.jpg 2x"
-                  
                 />
                 <img
                   src="./images/img-mobile-1.jpg "
@@ -341,21 +337,18 @@
             <li class="our-team__list">
               <picture>
                 <source
-                media="(min-width: 1200px)"
+                  media="(min-width: 1200px)"
                   srcset="./images/img(2).jpg 1x, ./images/img-desktop-2@2x.jpg 2x"
-                  
                 />
 
                 <source
-                media="(min-width: 768px)"
+                  media="(min-width: 768px)"
                   srcset="./images/img-tablet-2.jpg 1x, ./images/img-tablet-2@2x.jpg 2x"
-                  
                 />
 
                 <source
-                media="(min-width: 320px)"
+                  media="(min-width: 320px)"
                   srcset="./images/img-mobile-2.jpg 1x, ./images/img-mobile-2@2x.jpg 2x"
-                  
                 />
                 <img
                   src="./images/img-mobile-2.jpg"
@@ -402,27 +395,25 @@
             <li class="our-team__list">
               <picture>
                 <source
-                media="(min-width: 1200px)"
+                  media="(min-width: 1200px)"
                   srcset="./images/img(3).jpg 1x, ./images/img-desktop-3@2x.jpg 2x"
-                  
                 />
 
                 <source
-                media="(min-width: 768px)"
+                  media="(min-width: 768px)"
                   srcset="./images/img-tablet-3.jpg 1x, ./images/img-tablet-3@2x.jpg 2x"
-                  
                 />
 
                 <source
-                media="(min-width: 320px)"
+                  media="(min-width: 320px)"
                   srcset="./images/img-mobile-3.jpg 1x, ./images/img-mobile-3@2x.jpg 2x"
-                  
                 />
-                <img src="./images/img(3).jpg"
-                 alt="Фотография Михаил Ермаков" 
-                 loading="lazy"
-                 class="team-img" 
-                 />
+                <img
+                  src="./images/img(3).jpg"
+                  alt="Фотография Михаил Ермаков"
+                  loading="lazy"
+                  class="team-img"
+                />
               </picture>
               <div class="team-profession">
                 <h3 class="team">Михаил Ермаков</h3>
@@ -463,58 +454,57 @@
         </div>
       </section>
 
-     
-    <div class="conteiner clients">
-          <h2 class="clients-title">Постоянные клиенты</h2>
-          <ul class="clients-list">
-            <li class="clients-item link">
-              <a href="" class="clients-list-link">
-                <svg class="clients-icon">
-                  <use href="./images/symbol-defs.svg#icon-group1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="clients-item list">
-              <a href="" class="clients-list-link">
-                <svg class="clients-icon">
-                  <use href="./images/symbol-defs.svg#icon-group2"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="clients-item list">
-              <a href="" class="clients-list-link">
-                <svg class="clients-icon">
-                  <use href="./images/symbol-defs.svg#icon-group3"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="clients-item list">
-              <a href="" class="clients-list-link">
-                <svg class="clients-icon">
-                  <use href="./images/symbol-defs.svg#icon-group4"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="clients-item list">
-              <a href="" class="clients-list-link">
-                <svg class="clients-icon">
-                  <use href="./images/symbol-defs.svg#icon-group5"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="clients-item list">
-              <a href="" class="clients-list-link">
-                <svg class="clients-icon">
-                  <use href="./images/symbol-defs.svg#icon-group6"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+      <div class="container clients">
+        <h2 class="clients-title">Постоянные клиенты</h2>
+        <ul class="clients-list">
+          <li class="clients-item link">
+            <a href="" class="clients-list-link">
+              <svg class="clients-icon">
+                <use href="./images/symbol-defs.svg#icon-group1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="clients-item list">
+            <a href="" class="clients-list-link">
+              <svg class="clients-icon">
+                <use href="./images/symbol-defs.svg#icon-group2"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="clients-item list">
+            <a href="" class="clients-list-link">
+              <svg class="clients-icon">
+                <use href="./images/symbol-defs.svg#icon-group3"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="clients-item list">
+            <a href="" class="clients-list-link">
+              <svg class="clients-icon">
+                <use href="./images/symbol-defs.svg#icon-group4"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="clients-item list">
+            <a href="" class="clients-list-link">
+              <svg class="clients-icon">
+                <use href="./images/symbol-defs.svg#icon-group5"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="clients-item list">
+            <a href="" class="clients-list-link">
+              <svg class="clients-icon">
+                <use href="./images/symbol-defs.svg#icon-group6"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
     </main>
     <!-- Footer -->
-     <footer class="footer">
-      <div class="conteiner footer-content">
+    <footer class="footer">
+      <div class="container footer-content">
         <div class="footer-logo-adds">
           <a href="./index.html" class="logo logo-footer"
             >Web <span class="logo-footer__desc">Studio</span>

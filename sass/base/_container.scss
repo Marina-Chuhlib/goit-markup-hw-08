@@ -1,4 +1,4 @@
-.conteiner {
+.container {
   padding-left: 15px;
   padding-right: 15px;
   margin-right: auto;
@@ -6,24 +6,24 @@
 }
 
 @media screen and (min-width: 480px) {
-  .conteiner {
+  .container {
     width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .conteiner {
+  .container {
     width: 768px;
   }
 }
 
-.conteiner.clients {
+.container.clients {
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
-  .conteiner {
+  .container {
     width: 1200px;
   }
 }
