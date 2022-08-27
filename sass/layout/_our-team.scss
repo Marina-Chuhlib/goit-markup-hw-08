@@ -4,6 +4,9 @@
 
   @media screen and (max-width: 767px) {
     display: block;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -22,21 +25,21 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 
-  &:not(:last-child) {
-    margin-bottom: 30px;
-  }
-
-  &:nth-child(4n) {
-    margin-right: 0;
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     max-width: calc((100% - 60px) / 2);
 
     margin-right: 0;
+  }
 
-    &:not(:last-child) {
-      margin: 0;
+  @media screen and (min-width: 1200px) {
+    &:nth-child(4n) {
+      margin-right: 0;
     }
   }
 }
