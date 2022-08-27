@@ -93,11 +93,12 @@
   }
 }
 
-// @media screen and (min-width: 768px) {
-//   .hero {
-//     padding: 128px 208px 118px 206px;
-//   }
-// }
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 128px;
+    padding-bottom: 118px;
+  }
+}
 
 @media screen and (min-width: 1200px) {
   .hero {

@@ -1,23 +1,20 @@
 .conteiner {
   padding-left: 15px;
   padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 @media screen and (min-width: 480px) {
   .conteiner {
     width: 480px;
-    margin-right: auto;
-    margin-left: auto;
   }
 }
 
 @media screen and (min-width: 768px) {
   .conteiner {
-    width: 720px;
+    width: 768px;
   }
-
-  // .conteiner.employees {
-  //   width: 100%;
 }
 
 .conteiner.clients {

@@ -1,11 +1,13 @@
 .our-team {
   display: flex;
   flex-wrap: wrap;
-  margin-top: -30px;
-  margin-bottom: -30px;
 
   @media screen and (max-width: 767px) {
     display: block;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    gap: 30px;
   }
 }
 
@@ -29,11 +31,13 @@
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    flex-basis: calc((100% - 2 * 30px) / 2);
-  }
+    max-width: calc((100% - 60px) / 2);
 
-  &:not(:last-child) {
-    margin-bottom: 30px;
+    margin-right: 0;
+
+    &:not(:last-child) {
+      margin: 0;
+    }
   }
 }
 
@@ -43,10 +47,6 @@
 
 .team-img {
   width: 100%;
-
-  // @media screen and (min-width: 768px) and (max-width: 1199px) {
-  //   width: 354px;
-  // }
 
   @media screen and (min-width: 1200px) {
     width: 270px;

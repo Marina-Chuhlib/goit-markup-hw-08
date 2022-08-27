@@ -6,6 +6,10 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    height: 80px;
+  }
 }
 
 .logo {
@@ -115,16 +119,18 @@ header {
   margin-left: auto;
 
   @media screen and (min-width: 768px) and(max-width: 1199px) {
-    display: block;
-    text-align: center;
-    white-space: nowrap;
-    margin: 0;
+    justify-content: flex-end;
   }
 }
 
 .contacts-list {
   justify-content: center;
   align-items: center;
+  @media screen and (min-width: 768px) and(max-width: 1199px) {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
 }
 
 .contacts .contacts-list + .contacts-list {
