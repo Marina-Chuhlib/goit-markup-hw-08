@@ -64,19 +64,14 @@ button {
   cursor: pointer;
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 @media screen and (max-width: 767px) {
   .section {
     padding-top: 60px;
-    padding-bottom: 48px;
+    padding-bottom: 60px;
   }
   .conteiner.clients {
-    padding-top: 48px;
-    padding-bottom: 48px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
   .portfolio {
     padding-top: 60px;
@@ -86,6 +81,12 @@ button {
   .section {
     padding-top: 60px;
     padding-bottom: 48px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 .container {
@@ -99,20 +100,27 @@ button {
   .container {
     width: 480px;
   }
+  .container.clients {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
   }
+  .container.clients {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
-.container.clients {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
+  }
+  .container.clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 .modal-button {
@@ -150,6 +158,11 @@ button {
 .button .button-list + .button-list {
   margin-left: 8px;
 }
+@media screen and (max-width: 767px) {
+  .button .button-list + .button-list {
+    margin: 0;
+  }
+}
 
 .button.secondary {
   display: inline-block;
@@ -178,10 +191,15 @@ button {
 .button-filter {
   margin-bottom: 50px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .button-filter {
     flex-wrap: wrap;
     justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 767px) {
+  .button-filter {
+    gap: 8px;
   }
 }
 
@@ -248,6 +266,11 @@ button {
 @media screen and (max-width: 480px) {
   .subs-form__input {
     width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .subs-form__input {
+    width: 450px;
   }
 }
 @media screen and (max-width: 1199px) {
@@ -912,17 +935,6 @@ header {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tablet@2x.jpg);
   }
 }
-@media screen and (min-width: 1200px) {
-  .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
-    max-width: 1600px;
-  }
-}
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpl) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
-  .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-desktop@2x.jpg);
-  }
-}
 .hero-title {
   margin: 0 auto;
   margin-bottom: 30px;
@@ -970,17 +982,23 @@ header {
     margin-right: auto;
     margin-left: auto;
     background-color: var(--accent-background-color);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
   }
 }
-@media screen and (max-width: 767px) {
-  .features-list:not(:last-child) {
-    margin-bottom: 30px;
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
   }
 }
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpl) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-desk@2x.jpg);
+    max-width: 1600px;
+  }
+}
+
 .features {
   display: flex;
   color: var(--primary-text-color);
@@ -991,6 +1009,14 @@ header {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .features-list {
+    text-align: center;
+  }
+  .features-list:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .container.advantages {
     width: 100%;
@@ -1010,15 +1036,19 @@ header {
 }
 @media screen and (min-width: 1140px) and (max-width: 1199px) {
   .features-list {
+    gap: 30px;
     flex-basis: calc((100% - 90px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features-list {
+    margin: 0;
+    gap: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
   .advantage {
     padding-bottom: 0;
-  }
-  .advantage:nth-child(4n) {
-    margin-right: 0;
   }
 }
 .features-icons {
@@ -1128,6 +1158,9 @@ header {
   border-radius: 0px 0px 4px 4px;
 }
 @media screen and (max-width: 767px) {
+  .our-team__list {
+    margin-right: 0;
+  }
   .our-team__list:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -1447,12 +1480,6 @@ header {
     width: 100%;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .footer {
-    padding-right: 89px;
-    padding-left: 76px;
-  }
-}
 
 .footer-content {
   display: flex;
@@ -1483,6 +1510,9 @@ header {
   .footer-logo-adds {
     margin-right: 0;
     margin-bottom: 60px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1498,7 +1528,7 @@ header {
   margin-right: 0;
   margin-bottom: 20px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .logo-footer {
     align-items: center;
     justify-content: center;
@@ -1549,6 +1579,9 @@ address {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-socials {
     margin: 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
 }
 

@@ -37,6 +37,13 @@
 
 .button .button-list + .button-list {
   margin-left: 8px;
+
+  @media screen and (max-width: 767px) {
+    margin: 0;
+  }
+}
+
+.button-list {
 }
 
 .button.secondary {
@@ -74,8 +81,12 @@
 .button-filter {
   margin-bottom: 50px;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 767px) {
     flex-wrap: wrap;
     justify-content: flex-start;
+  }
+
+  @media screen and (max-width: 767px) {
+    gap: 8px;
   }
 }

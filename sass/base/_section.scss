@@ -1,16 +1,11 @@
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 @media screen and (max-width: 767px) {
   .section {
     padding-top: 60px;
-    padding-bottom: 48px;
+    padding-bottom: 60px;
   }
   .conteiner.clients {
-    padding-top: 48px;
-    padding-bottom: 48px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
   .portfolio {
     padding-top: 60px;
@@ -21,5 +16,12 @@
   .section {
     padding-top: 60px;
     padding-bottom: 48px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }

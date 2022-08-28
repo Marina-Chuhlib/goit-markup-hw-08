@@ -12,13 +12,8 @@
   @media screen and (max-width: 767px) {
     display: block;
     text-align: center;
-    
-    width: 100%;
-  }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    padding-right: 89px;
-    padding-left: 76px;
+    width: 100%;
   }
 }
 
@@ -47,6 +42,10 @@
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-right: 0;
     margin-bottom: 60px;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
   @media screen and (min-width: 1200px) {
@@ -61,7 +60,7 @@
   margin-right: 0;
   margin-bottom: 20px;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     align-items: center;
     justify-content: center;
   }
@@ -109,6 +108,10 @@ address {
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin: 0;
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
 }
 .socials-title {
