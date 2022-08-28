@@ -21,6 +21,7 @@
   .container.advantages {
     width: 100%;
   }
+
   .features {
     flex-wrap: wrap;
     gap: 30px;
@@ -45,9 +46,8 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .features-list {
-    margin: 0;
-    gap: 30px;
+  .features-list:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
@@ -66,18 +66,17 @@
 
   height: 120px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
   }
 
   background: #f5f4fa;
   border-radius: 4px;
   margin-bottom: 30px;
-
-  @media screen and (min-width: 1200px) {
-    width: 270px;
-    margin-right: 0;
-  }
 }
 
 .icon-features {

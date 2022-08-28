@@ -100,6 +100,8 @@ button {
   .container {
     width: 480px;
   }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .container.clients {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -358,16 +360,14 @@ button {
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .modal {
-    width: 450px;
-    height: 609px;
+    max-width: 450px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .modal {
     width: 450px;
-    height: 609px;
   }
 }
 
@@ -398,8 +398,6 @@ button {
 }
 
 .modal-form-title {
-  margin-bottom: 12px;
-  height: 23px;
   font-size: 20px;
   font-weight: 700;
   line-height: 1.15;
@@ -411,6 +409,17 @@ button {
     font-size: 20px;
     font-weight: 700;
     line-height: 1.5;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .modal-form-title {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal-form-title {
+    height: 23px;
+    margin-bottom: 12px;
   }
 }
 
@@ -506,6 +515,11 @@ button {
   margin-left: 14px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (max-width: 1199px) {
+  .modal-form-chec-desc::before {
+    margin-left: 0;
+  }
+}
 
 .input-checkbox:checked + .modal-form-chec-desc::before {
   background-color: var(--accent-color);
@@ -539,6 +553,11 @@ button {
     font-size: 12px;
     font-weight: 400;
     line-height: 1.1716666667;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .modal-form-chec-desc {
+    font-size: 12px;
   }
 }
 
@@ -1041,9 +1060,8 @@ header {
   }
 }
 @media screen and (min-width: 1200px) {
-  .features-list {
-    margin: 0;
-    gap: 30px;
+  .features-list:not(:last-child) {
+    margin-right: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1057,7 +1075,7 @@ header {
   border-radius: 4px;
   margin-bottom: 30px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .features-icons {
     width: 354px;
   }
@@ -1065,7 +1083,6 @@ header {
 @media screen and (min-width: 1200px) {
   .features-icons {
     width: 270px;
-    margin-right: 0;
   }
 }
 
@@ -1262,6 +1279,13 @@ header {
   letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 30px;
+}
+@media screen and (max-width: 767px) {
+  .clients-title {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.1785714286;
+  }
 }
 @media screen and (min-width: 1200px) {
   .clients-title {
